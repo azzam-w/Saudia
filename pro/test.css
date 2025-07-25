@@ -1,0 +1,203 @@
+
+
+ /*body{
+  background: blueviolet;
+}
+.menu{
+
+ 
+
+  position:fixed;
+  inset:2px 0 10px 0;
+  background:#3b51db ;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  transition: 0.5s;
+  z-index: 10000;
+}
+.menu.active{
+  width: 125px;
+}
+:root{
+  --bg:#fff;
+}
+.menutoggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 23px;
+    border-bottom: 1px solid rgba(0,0,0,0.01);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menutoggle::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-8px);
+    transition: 0.5s;
+  }
+  .menu.active .menutoggle::before{
+    transform: translateY(0) rotate(45deg);
+  }
+  .menutoggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(8px);
+    box-shadow: 0 -8px 0 #fff;
+    transition: 0.5s;
+  }
+  .menu.active .menutoggle::after{
+    transform: translateY(0) rotate(-45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+  .menu ul
+  {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+  .menu ul li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 76px;
+    border-radius: 12px;
+    border: 8px solid transparent;
+    transition:0.5s ;
+  }
+  .menu ul li.active{
+    transform: translateX(30px);
+    background:#fff;
+  }
+  .menu ul li::after{
+    content: '';
+    position: absolute;
+    top: -28px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background:transparent;
+    border-top-right-radius: 20px ;
+    box-shadow: 6px -3px 0 3px var(#fff);
+    transform: scale(0);
+    transform-origin:bottom right ;
+    transition: 0.5s;
+  }
+  .menu ul li.active::after{
+    right: 22px;
+    transform: scale(1);
+  }
+  .menu ul li a{
+    position:relative;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  .menu ul li a .icon{
+    position:relative;
+    display: block;
+    min-width: 40px;
+    height: 60px;
+    border-radius: 10px;
+    background: #4557c9;
+    font-size: 1.75em;
+    line-height: 60px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+  }
+  .menu ul li.active a .icon{
+    color: #fff;
+    background: var(--clr);
+  }
+  .menu ul li.active a .icon::before
+  {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:var(--clr);
+    filter: blur(8px);
+    transition: 0.5s;
+  
+  }
+  .menu ul li.active a .icon::before{
+  opacity: 0.7;
+  }
+  .menu ul li.active a .icon::after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left:-62px;
+  width: 15px;
+  height: 15px;
+  border: 8px solid var(--bg);
+  background:var(--clr);
+  border-radius: 50%;
+  }
+  .menu ul li a .text
+  {
+    position: relative;
+    padding: 0 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    opacity: 0;
+    visibility:hidden;
+    transition: 0.5s;
+  }
+  .menu.active ul li.active a .text
+  {
+    box-sizing: border-box;
+    visibility: visible;
+    font-size: smaller;
+    opacity: 1;
+  }
+  .menu ul li.active a .text
+  {
+      color: #4964db;
+  }
+  .announcements{
+    background-color: #beb6c4;
+    position: absolute;
+    width: 70%;
+    top:150%;
+    left: 15%;
+    height: 40%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap:20px 20px;
+    }
+    .announcements .drop{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      top: -20px;
+      background: #333;
+      box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+       25px 35px 20px rgba(0,0,0,0.05),
+      25px 30px 30px rgba(0,0,0,0.05),
+      inset -20px -20px 25px rgba(255,255,255,0.9);
+  
+    }

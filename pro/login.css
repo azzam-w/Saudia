@@ -1,0 +1,283 @@
+
+body {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  height: 100vh;
+  font-family: 'Montserrat',sans-serif;
+}
+.container{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+form{
+  background: rgba(255, 255,255, 0.3);
+  padding: 3em;
+  height: 320px;
+  border-radius: 20px;
+  border-left:1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter:blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+}
+.we
+{
+  margin: 20px;
+  font-size: 40px;
+}
+.we span:nth-child(1){
+  color:#FDD017;
+}
+
+.we span:nth-child(2){
+  color:#87F717;
+}
+
+.we span:nth-child(3){
+  color:	#5FFB17;
+}
+
+.we span:nth-child(4){
+  color:	#59E817;
+}
+
+.we span:nth-child(5){
+  color:#C7A317;
+}
+.we span:nth-child(6){
+  color:	#8AFB17;
+}
+
+.we span:nth-child(7){
+  color:	#B1FB17;
+}
+
+
+
+
+&:hover {
+  text-shadow: 2px 2px 6px #00000040;
+}
+&:active{
+  text-shadow: none;
+}
+input{
+  background: transparent;
+  width: 200px;
+  padding:1em;
+  margin-bottom: 2em;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5000px;
+  backdrop-filter:blur(5px);
+  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  color:#fff;
+  font-family: 'Montserrat',sans-serif;
+  font-weight:  bold;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+}
+&:hover{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+&[type="text"],{
+&[type="email"] {
+  &:focus{
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+}
+&[type="button"] {
+  margin-top: 10px;
+  width: 150px;
+  font-size: 1rem
+
+  &:hover {
+    cursor:pointer;
+}
+&:active{
+  background: rgba(255, 20, 20, 0.2);
+}
+}
+}
+::placeholder{
+  font-family:  'Montserrat',sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.drops{
+  background: rgba(255, 0, 0, 0.5);
+}
+/*.cont{
+  position: relative;
+  display: flex;
+  width: 50%;
+  font-size: 5rem;
+  font-weight: bold;
+justify-content: center;
+flex-direction: column;
+  background: linear-gradient(45deg, #fc466b,#5F6F94);
+  letter-spacing:10px;
+
+}
+.cont span{
+  color:#091c34;
+  mix-blend-mode: lighten;
+}
+.cont::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  border-radius: 50%;
+  background:#000000;
+  animation: cont 6s linear infinite;
+}
+  @keyframes cont{
+  0% {left: -10px;}
+  50%{left: calc(100% - 100px);}
+  100%{left: -100px;}
+}*/
+
+
+.drop-1{
+  opacity: 0.6;
+  position: absolute;
+  background: #fc466b;
+  width: 100px;
+  height: 100px;
+  top:100px;
+  left: -90px;
+  border-radius: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  animation-name: chang1;
+ animation-duration:5s ;
+  animation-iteration-count: infinite ;
+  animation-direction: alternate;
+
+
+}
+@keyframes chang1{
+from{top: 100px;}
+to{top: 200px}
+from{top: 200px;}
+to{top: 100px;}
+}
+.drop-2{
+  opacity: 0.6;
+  position: absolute;
+  background:#D58BDD ;
+  width: 50px;
+  height:50px;
+  top:-20px;
+  left: -40px;
+  border-radius: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  animation-name: chang2;
+ animation-duration:5s ;
+  animation-iteration-count: infinite ;
+  animation-direction: alternate;
+}
+@keyframes chang2{
+from{top:-20px;}
+to{top: -40px}
+from{top:-40px;}
+to{top:-20px;}
+}
+.drop-3{
+  opacity: 0.6;
+  position: absolute;
+  background:#905E96 ;
+  width: 50px;
+  height:50px;
+  top:-30px;
+  left: 300px;
+  border-radius: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+    animation-name: chang3;
+  animation-duration:5s ;
+   animation-iteration-count: infinite ;
+   animation-direction: alternate;
+}
+@keyframes chang3{
+from{left: 300px;}
+to{left: 250px;}
+from{left:250px;}
+to{left: 300px;}
+}
+.drop-4{
+  opacity: 0.6;
+  position: absolute;
+  background:#C47AFF ;
+  width: 100px;
+  height:110px;
+  top:400px;
+  left: 400px;
+  border-radius: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  animation-name: chang4;
+animation-duration:5s ;
+ animation-iteration-count: infinite ;
+ animation-direction: alternate;
+}
+@keyframes chang4{
+from {top:400px;}
+to   {top:350px;}
+from {top:350px;}
+to   {top:400px;}
+}
+.drop-5{
+  opacity: 0.6;
+  position: absolute;
+  background:#FF74B1 ;
+  width: 60px;
+  height:50px;
+  top:300px;
+  left: -100px;
+  border-radius: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  animation-name: chang5;
+animation-duration:5s ;
+ animation-iteration-count: infinite ;
+ animation-direction: alternate;
+}
+@keyframes chang5{
+from {top:300px;}
+to   {top:270px;}
+from {top:270px;}
+to   {top:300px;}
+}
+.drop-6{
+  opacity: 0.6;
+  position: absolute;
+  background:#A084CA ;
+  width: 150px;
+  height:150px;
+  top:100px;
+  left: 400px;
+  border-radius: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  animation-name: chang6;
+animation-duration:5s ;
+ animation-iteration-count: infinite ;
+ animation-direction: alternate;
+}
+@keyframes chang6{
+from {top:100px;}
+to   {top:150px;}
+from {top:150px;}
+to   {top:100px;}
+}
